@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <title>More Marquees!!</title>
+</head>
+<body>
+    <nav>
+        <img src="{{url_for('static',filename='img/baby.gif')}}" alt="dancing baby">
+        <img src="{{url_for('static',filename='img/baby.gif')}}" alt="dancing baby">
+        <h1>awesome web page!!</h1>
+        <img src="{{url_for('static',filename='img/fire.gif')}}" alt="animated fire">
+        <img src="{{url_for('static',filename='img/fire.gif')}}" alt="animated fire">
+    </nav>
+    {% if range(0, 11)|random == 0 %}
+        <h1 class="crazy center-text">OMG YOU ARE THE 1 MILLIONTH VISITOR!!!</h1>
+    {% endif %}
+
+    <h1 class="oversize-h1 center-text">HERE WE GO!!! <a href="/">go back</a></h1>
+    {% for i in range(0,times) %}
+        <marquee><h1 class="wavy">{{display}}</h1></marquee>
+    {% endfor %}
+</body>
+</html>

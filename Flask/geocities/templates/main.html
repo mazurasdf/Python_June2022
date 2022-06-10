@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <title>Welcome to my AWESOME site!</title>
+</head>
+<body>
+    <nav>
+        <img src="{{url_for('static',filename='img/baby.gif')}}" alt="dancing baby">
+        <img src="{{url_for('static',filename='img/baby.gif')}}" alt="dancing baby">
+        <h1>awesome web page!!</h1>
+        <img src="{{url_for('static',filename='img/fire.gif')}}" alt="animated fire">
+        <img src="{{url_for('static',filename='img/fire.gif')}}" alt="animated fire">
+    </nav>
+
+
+    <div id="container">
+        <h1 class="text-background oversize-h1">This is THE website on the internet, invented by Michael Mazur. Yes, he invented the internet. and this website.</h1>
+        <h1 class="oversize-h1 center-text orange">
+            click on the dancing baby to go to my favorite website. click on the fire to go to another excellent page on here!
+        </h1>
+
+        <div class="links">
+            <a href="http://thebestdinosaur.com"><img src="{{url_for('static',filename='img/baby.gif')}}" alt="dancing baby"></a>
+            <a href="/repeat/marquee_time/12"><img src="{{url_for('static',filename='img/fire.gif')}}" alt="animated fire"></a>
+        </div>
+    </div>
+
+</body>
+</html>
